@@ -1,0 +1,38 @@
+.rdp-root {
+  --rdp-accent-color: hsl(var(--primary)); /* UltraPass blue */
+  --rdp-accent-background-color: hsl(var(--primary) / 0.1);
+
+  /* Size adjustments */
+  --rdp-day-height: 40px;
+  --rdp-day-width: 40px;
+  --rdp-day_button-height: 38px;
+  --rdp-day_button-width: 38px;
+
+  /* Borders and radius */
+  --rdp-day_button-border-radius: var(--radius);
+  --rdp-selected-border: 2px solid hsl(var(--primary));
+
+  /* States */
+  --rdp-today-color: hsl(var(--primary));
+  --rdp-range_middle-background-color: hsl(var(--primary) / 0.1);
+  --rdp-range_start-date-background-color: hsl(var(--primary));
+  --rdp-range_end-date-background-color: hsl(var(--primary));
+}
+
+/* Additional customizations */
+.rdp-day_button:hover:not(:disabled) {
+  background-color: hsl(var(--primary) / 0.1);
+}
+
+.rdp-day_button:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+}
+
+.rdp-weekday {
+  color: hsl(var(--muted-foreground));
+}
+
+.rdp-dropdown {
+  color: hsl(var(--foreground));
+}

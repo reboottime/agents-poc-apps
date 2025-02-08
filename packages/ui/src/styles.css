@@ -1,0 +1,57 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 84% 4.9%;
+
+    /* Brand Colors */
+    --primary: 204 100% 50%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 152 70% 38%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Status Colors */
+    --success: 152 70% 38%;
+    --warning: 32 100% 50%; 
+    --error: 353 70% 37%;
+
+    /* UI Elements */
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 215 20.2% 65.1%;
+    --radius: 0.5rem;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+
